@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menú</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('./img/foto.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        
+        .menu {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        
+        .menu ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .menu ul li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .menu ul li a img {
+            width: 10cm;
+            height: 10cm;
+            transition: transform 0.3s;
+        }
+        
+        .menu ul li a img:hover {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+<body>
+    <nav class="menu">
+        <ul>
+            <li><a href="https://www.google.com.ar" target="_blank" title="Google Argentina"><img src="./img/google.jpeg" alt="Google Argentina"></a></li>
+            <li><a href="https://www.facebook.com" target="_blank" title="Facebook"><img src="./img/facebook.png" alt="Facebook"></a></li>
+            <li><a href="https://www.netflix.com" target="_blank" title="Netflix"><img src="./img/netflix.png" alt="Netflix"></a></li>
+            <li><a href="https://www.disneyplus.com" target="_blank" title="Disney Plus"><img src="./img/disney.jpeg" alt="Disney Plus"></a></li>
+        </ul>
+    </nav>
+</body>
+</html>
